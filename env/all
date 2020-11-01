@@ -1,0 +1,6 @@
+#!/bin/bash
+# https://github.com/lxk0301/scripts/blob/master/githubAction.md
+# 通知还没写
+PUSH_KEY=
+BARK_PUSH=
+BARK_SOUND=

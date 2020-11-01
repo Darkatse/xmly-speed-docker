@@ -29,6 +29,7 @@ git clone https://github.com/Darkatse/xmly-speed-docker
 cd xmly-speed-docker
 ```
 ### 获取cookie
+参考[原项目](https://github.com/Zero-S1/xmly_speed/blob/master/xmly_speed.md)
 
 ### 启动
 ```sh

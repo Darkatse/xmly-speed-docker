@@ -1,5 +1,4 @@
-
-version: "3.7"
+version: "2.1"
 x-logger: &logger
   logging:
     driver: "json-file"

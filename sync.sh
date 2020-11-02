@@ -14,7 +14,7 @@ cd /xmly_speed || exit 1
 pip3 install --no-cache-dir -r requirements.txt || exit 1
 cp /crontab.list /crontab.list.old
 echo "55 */3 * * * bash /sync 1>/proc/1/fd/1 2>/proc/1/fd/2" > /crontab.list
-echo "*/30 * * * * set -o allexport; source /all; source /env; python3 /xmly_speed/xmly_speed.py 1>/proc/1/fd/1 2>/proc/1/fd/2" >> /crontab.list
+echo "*/30 * * * * bash -c ' exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /xmly_speed; python3 xmly_speed.py '" >> /crontab.list
 crontab -r
 crontab /crontab.list || {
   cp /crontab.list.old /crontab.list

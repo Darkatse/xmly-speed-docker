@@ -30,6 +30,7 @@ cd xmly-speed-docker
 ```
 ### 获取cookie
 参考[原项目](https://github.com/Zero-S1/xmly_speed/blob/master/xmly_speed.md)
+可配置Server酱和Bark推送服务
 
 ### 启动
 ```sh
@@ -48,7 +49,7 @@ docker exec xmly1 bash -c 'set -o allexport; source /all; source /env;  cd /xmly
 2. 每个账号可以有不同的配置，比如配置微信推送
 #### 配置
 添加第二个账号：以上所有操作中的`1`替换成`2`, 然后重复之前所有操作。  
-超过三个账号需要手动创建./env/env4，修改./docker-compose.yml文件
+超过五个账号需要手动创建./env/env6，修改./docker-compose.yml文件
 #### 配置文件说明
 所有账号共享的参数需要配置./env/all, 每个账号独立参数需要配置./env/env*，  
 每个账号配置的参数会覆盖共享参数，每个账号未配置参数的继承共享的参数

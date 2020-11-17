@@ -30,3 +30,15 @@ services:
     volumes:
       - ./env/all:/all
       - ./env/env3:/env
+  xmly4:
+    <<: [ *logger, *common ]
+    container_name: xmly4
+    volumes:
+      - ./env/all:/all
+      - ./env/env4:/env
+  xmly5:
+    <<: [ *logger, *common ]
+    container_name: xmly5
+    volumes:
+      - ./env/all:/all
+      - ./env/env5:/env

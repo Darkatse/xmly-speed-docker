@@ -22,7 +22,28 @@ docker运行喜马拉雅极速版签到脚本
 >  **本项目参考了chinnkarahoi的[jd-scripts-docker](https://github.com/chinnkarahoi/jd-scripts-docker)项目，在此特别感谢！**
 
 ### 安装依赖
-git docker docker-compose
+安装docker
+```sh
+curl -fsSL https://get.docker.com | bash -s docker
+#在国内的话请用阿里云镜像
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+```
+安装git和docker-compose
+
+直接安装
+```sh
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+Debian & Ubuntu
+```sh
+sudo apt update && sudo apt install git docker-compose
+```
+
+CentOS
+```sh
+sudo yum install git docker-compose
+```
 ### 下载
 ```sh
 git clone https://github.com/Darkatse/xmly-speed-docker

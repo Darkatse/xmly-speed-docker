@@ -4,3 +4,5 @@
 # bark 服务，自行搜索；可填；形如 jfjqxDx3xxxxxxxxSaK 的字符串
 SCKEY=""
 BARK=""  
+TG_BOT_TOKEN=""
+TG_USER_ID=""
